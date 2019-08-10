@@ -137,5 +137,171 @@
 // }
 // else
 // {
-//     document.write("<h3> Your guess is incorrect</h3>");
+//    document.write("<h3> Your guess is incorrect</h3>");
 // }
+
+
+//fuction declaration
+
+ 
+// function randomNumber()
+// {
+//     var randomNumber = Math.floor(Math.random() * 6)+1 ;
+//     return randomNumber;
+// }
+
+// document.write(randomNumber());
+// alert("Random number "+randomNumber());
+// var number = randomNumber();
+// console.log(number);
+
+
+// // function expression
+
+// var randomNumber = function()
+// {
+//     return Math.floor(Math.random() * 6) +1;
+// }
+
+// document.write(randomNumber());
+
+
+// // Variable scope
+
+// var x = 10 ;
+// function print()
+// {
+//     var x = 20;
+//     x += 10;
+//     return x;
+// }
+
+// document.write(x); //10
+// document.write(print());//30
+// document.write(x); //10
+
+// Keeping two variable different
+
+// var wakeUp = "Hello";
+// function writingVar(){
+//   var wakeUp = "Sid";
+//   return wakeUp;
+// }
+// alert(writingVar());
+// alert(wakeUp);
+
+// Changing global varaible inside a varaible .
+
+// var wakeUp = "Hello";
+// function writingVar(){
+//    wakeUp = "Sid";
+//   return wakeUp;
+// }
+// alert(wakeUp);
+// alert(writingVar());
+
+// var wakeUp = "Hello";
+// function writingVar(){
+//    wakeUp = "Sid";
+//   return wakeUp;
+// }
+//
+// alert(writingVar());
+// alert(wakeUp);
+
+
+
+// //Fuction with one parameter
+
+// function randomNumber(upper)
+// {
+//     return Math.floor(Math.random() * upper) +1;
+// }
+
+// console.log(randomNumber(9));
+// console.log(randomNumber(99));
+// console.log(randomNumber(999));
+
+
+// //Area of rectangle ...........Fuction with two parameter
+
+// function areaOfRectangle(length , breadth)
+// {
+//     return length * breadth;
+// }
+
+// document.write(`<h3>Area of rectangle : ${areaOfRectangle(5,3)}</h3>`);
+
+
+
+// //Area of rectangle ...........Fuction with three parameter
+
+// function areaOfRectangle(length ,breadth ,unit)
+// {
+//     var area = length * breadth + unit;
+//     return area;
+// }
+
+// document.write(`<h3>Area of rectangle : ${areaOfRectangle(5,10, ' sq per unit')}</h3>`);
+
+
+
+// // Using function set the upper and lower limit to generate random number
+// //and update the same
+
+// function randomNumber(upper , lower)
+// {
+//     return Math.floor(Math.random() * (upper - lower + 1) + lower)
+// }
+
+// document.write(randomNumber(20,10));
+// document.write("<br></br>");
+// document.write(randomNumber(10,5));
+// document.write("<br></br>");
+// document.write(randomNumber(100,80));
+
+
+// // //Checking random number
+// function randomNumber(upper , lower)
+// {
+//     return Math.floor(Math.random() * (upper - lower + 1) + lower)
+// }
+// var i = 0;
+// while(i<50)
+// {
+//     document.write(randomNumber(10,5)+ "<br>");
+//     document.write("*********************************" +Math.random()+ "<br>");
+//     i++;
+// }
+
+// // Checking whether the user entered any "string" instead of number.
+
+// function areaOfRectangle()
+// {
+//     var length = parseInt(prompt("Enter length of Rectangle"));
+//     var breadth = parseInt(prompt("Enter breadth of Rectangle"));
+     
+//     if(isNaN(length) || isNaN(breadth))
+//         {
+//             alert("Please enter number");
+//             length = parseInt(prompt("Enter length of Rectangle"));
+//             breadth = parseInt(prompt("Enter breadth of Rectangle"));
+//         }
+//     return length * breadth;
+// }
+// alert("Area of Rectangle is " +areaOfRectangle());
+   
+
+function randomGenerator (lower , upper){
+   if(isNaN(lower) || isNaN(upper)){
+ // throw new Error('Both the numbers should be integers');
+      console.log("Both the arguments should be number");
+   }
+   return Math.floor(Math.random() * (upper - lower + 1) + lower);
+
+ }
+
+ console.log(randomGenerator(8 , 9));
+console.log(randomGenerator(8 , 9));
+ console.log(randomGenerator("New" , 9));
+    
