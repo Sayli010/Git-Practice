@@ -30,10 +30,10 @@
 
 // //Generate a random number till between two values generate by user.
 
-var startValue = parseInt(prompt("Enter start value "));
-var endValue = parseInt(prompt("Enter end value "));
-var randomNumber = Math.floor((Math.random () * (endValue- startValue + 1) + startValue));
-console.log(randomNumber);
+// var startValue = parseInt(prompt("Enter start value "));
+// var endValue = parseInt(prompt("Enter end value "));
+// var randomNumber = Math.floor((Math.random () * (endValue- startValue + 1) + startValue));
+// console.log(randomNumber);
 
 
 

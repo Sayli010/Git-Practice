@@ -21,12 +21,13 @@ var Lname = 'Pisal';
 
 // document.write("<h3> Lenght of Last Name is: "+Lname.length+"</h3>");// lentgh of variable
 
-// var a = parseInt(prompt(" Please enter value of a ")); //input value from user
-// var b = parseInt(prompt("Please enter value of b "));
+var a = parseInt(prompt(" Please enter value of a ")); //input value from user
+var b = parseInt(prompt("Please enter value of b "));
 
-// document.write("<h3> Addition of a and b: "  +(a+b)+"</h3>"); //  prompt returns string so a and b concat hence first a and b convert into int
+document.write("<h3> Addition of a and b: "  +(a+b)+"</h3>"); //  prompt returns string so a and b concat hence first a and b convert into int
 
 document.write("<h3> String Interpolation is given below. </h3>");
 document.write(`<h4> My name is ${Fname} ${Lname} </h4>`);// String Interpolation
+document.write("<h4> My name is " +Fname+ " "+ Lname+"</h4>");
 
 

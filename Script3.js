@@ -1,15 +1,15 @@
 // // Make one program with if statement , one with else statement and
 // //and came the case of uppercase.
 
-// var answer = prompt('What programming language is the name of your gem?');
-// 	if(answer.toUpperCase() === 'RUBY')
-// 	{
-// 		document.write("<p> That's right </p>");
-// 	} 
-// 	else 
-// 	{
-//        document.write("<p> Sorry , that's wrong .</p>")
-//      }
+var answer = prompt('What programming language is the name of your gem?');
+	if(answer.toUpperCase() === 'RUBY')
+	{
+		document.write("<p> That's right </p>");
+	} 
+	else 
+	{
+       document.write("<p> Sorry , that's wrong .</p>")
+ }
 
 
 //quiz

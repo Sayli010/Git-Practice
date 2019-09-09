@@ -223,29 +223,29 @@
 //     }
 // }
 /////////////////////////////////////////////////////////////////////
-var flower = [ 'Rose','Mogara','Lilly'];
-var search;
-var flag = false;
+// var flower = [ 'Rose','Mogara','Lilly'];
+// var search;
+// var flag = false;
 
-while(!flag)
-{
-    search = prompt("Type 'quit' to end search ..Type 'list' to print list of flowers....Type 'flower name' to search flower. ");
+// while(!flag)
+// {
+//     search = prompt("Type 'quit' to end search ..Type 'list' to print list of flowers....Type 'flower name' to search flower. ");
    
-    if(search.toUpperCase() === "QUIT")
-    {
-        flag = true;
-    }
-    else if(search.toUpperCase() === "LIST")
-    {
-        document.write("<h3>"+flower.join(",")+"</h3>");
-        flag = true;
-    } 
-    else if(flower.indexOf(search) > -1 ){
-        document.write(`${search} flower is available`);
-        flag = true;
-    }
-    else{
-        document.write(`${search} flower is not available`);
-        flag = true;
-    }
-}
+//     if(search.toUpperCase() === "QUIT")
+//     {
+//         flag = true;
+//     }
+//     else if(search.toUpperCase() === "LIST")
+//     {
+//         document.write("<h3>"+flower.join(",")+"</h3>");
+//         flag = true;
+//     } 
+//     else if(flower.indexOf(search) > -1 ){
+//         document.write(`${search} flower is available`);
+//         flag = true;
+//     }
+//     else{
+//         document.write(`${search} flower is not available`);
+//         flag = true;
+//     }
+// }
