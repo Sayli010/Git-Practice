@@ -21,12 +21,12 @@ removeButton.addEventListener('click',()=>{
     presentList.removeChild(removeElement);
 });
 
-// for(let i = 0 ; i <list.length ; i++){
-//     // console.log(list[i]);
-//     list[i].addEventListener('mouseover', ()=>{
-//          console.log(list[i]);
-//          list[i].textContent = list[i].textContent.toUpperCase();
-//      });
+for(let i = 0 ; i <list.length ; i++){
+    // console.log(list[i]);
+    list[i].addEventListener('mouseover', ()=>{
+         console.log(list[i]);
+         list[i].textContent = list[i].textContent.toUpperCase();
+     });
 
 //     list[i].addEventListener('mouseout', ()=>{
 //          console.log(list[i]);
@@ -87,4 +87,4 @@ removeButton.addEventListener('click',()=>{
 // function add2((msg)=>console.log(msg) , msg)
 //     add(msg);
 // }
-// add2(add , "This is add2 method");
+// add2(add , "This is add2 method")
